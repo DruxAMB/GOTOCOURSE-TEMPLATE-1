@@ -1,417 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-  <title>GOTOCOURSE-Template 1</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: "Inter", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-      font-variation-settings:
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
         "slnt" 0;
-      scroll-behavior: smooth;
-    }
+    scroll-behavior: smooth;
+}
 
-    /* all-buutons  */
-    button {
-      border: 1px solid transparent;
-      border-radius: 0.3rem;
-      background-color: orangered;
-      color: white;
-      width: 10rem;
-      height: 3rem;
-      cursor: pointer;
-      font-size: 1.2rem;
-    }
+body {
+    background-color: aliceblue;
+}
 
-    button:hover {
-      background-color: rgb(225, 86, 35);
-    }
+/* all-buutons  */
+button {
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    background-color: rgb(50, 120, 50);
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
 
-    /* header-background-image and header styling */
-    header {
-      background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.435), rgba(215, 134, 137, 0.534)), url("https://img.freepik.com/free-photo/medium-shot-woman-reading-book_23-2149073182.jpg?t=st=1708964035~exp=1708967635~hmac=db9783dd3726710b7d9bedd1b02dec53cfe0c2e6a548f9ce0d43648909569dda&w=826");
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-    }
+button:hover {
+    background-color: rgba(89, 162, 89, 0.919);
+}
 
-    header nav {
-      padding: 3rem;
-      display: flex;
-      justify-content: space-between;
-    }
+/* header-background-image and header styling */
+header {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.435), rgba(65, 135, 65, 0.57)), url("https://img.freepik.com/free-photo/cute-adorable-afro-american-student-girl-with-black-voluminous-hair-enjoying-leisure-time-after-college-lying-couch-stylish-ripped-jeans-blouse-sharing-thoughts-ideas-her-diary_343059-4731.jpg?t=st=1709108773~exp=1709112373~hmac=2d8711af55517a8fbb2e5b0d8c497a62640926a4af6632a9f89a7e99b162a4dc&w=826");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 
-    header section {
-      margin: 12rem auto;
-    }
+header nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(65, 135, 65, 0.772);
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
 
-    /* header-nav-styling  */
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-      width: 30rem;
-    }
+/* header-nav-styling  */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+}
 
-    nav .logo-item {
-      display: flex;
-    }
+nav #btn,
+#btn2 {
+    display: none;
+}
 
-    .logo-item img {
-      border: 1px solid transparent;
-      border-radius: 50%;
-      width: 2rem;
-      height: 2rem;
-    }
+nav .logo-item {
+    display: flex;
+    justify-content: space-around;
+    width: 34rem;
+    margin: auto 0;
+}
 
-    nav .logo-text {
-      font-weight: bold;
-      display: flex;
-      margin-left: 0.2rem;
-    }
+.logo-item div {
+    display: flex;
+}
 
-    .logo-text p {
-      color: orange;
-    }
+.logo-item img {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
 
-    nav svg {
-      width: 0.8rem;
-      margin-left: 0.2rem;
-    }
+nav .logo-text {
+    font-weight: bold;
+    display: flex;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
 
-    nav ul li {
-      list-style-type: none;
-    }
+.logo-text p {
+    color: white;
+}
 
-    nav #btn,
-    #btn2 {
-      display: none;
-    }
+/* header-section-styling  */
+header section {
+    margin: 15rem auto;
+}
 
-    a {
-      text-decoration: none;
-      color: black;
-    }
+header section p {
+    color: white;
+}
 
-    a:hover {
-      text-decoration: underline;
-      color: rgb(70, 64, 64);
-    }
+/* social-styling  */
+.social {
+    justify-content: space-around;
+}
 
-    /* all-h1-elements-styling  */
-    h1 {
-      display: flex;
-    }
+.social svg {
+    width: 1.2rem;
+    margin: 0 1rem;
+    margin-top: 0.4rem;
+}
 
-    h1 p {
-      color: orange;
-      margin: 0 0.5rem;
-    }
+/* menu-styling  */
+.menu svg {
+    width: 0.8rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
 
-    /* all-sections-styling  */
+nav ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(102, 105, 93);
+}
+
+/* all-h1-elements-styling  */
+h1 {
+    display: flex;
+}
+
+h1 p {
+    color: rgba(65, 135, 65, 0.919);
+    margin: 0 0.5rem;
+}
+
+/* all-sections-styling  */
+section {
+    text-align: center;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 70rem;
+}
+
+section h1 {
+    justify-content: center;
+    margin: 2rem 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+section p {
+    text-align: start;
+}
+
+/* education-section-styling  */
+.education {
+    display: flex;
+}
+
+.education img {
+    border: 1px solid transparent;
+    border-radius: 5rem;
+    height: 20rem;
+    width: 28rem;
+    margin: 0 1rem;
+}
+
+/* About-section-styling  */
+#About {
+    display: flex;
+}
+
+#About img {
+    border: 1px solid transparent;
+    border-radius: 3rem;
+    height: 30rem;
+    width: 30rem;
+    margin: 0 2rem;
+    object-fit: cover;
+}
+
+/* courses-section-card-styling  */
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    border: 5px solid rgba(65, 135, 65, 0.919);
+    border-radius: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.card-item:hover {
+    box-shadow: 5px 5px 15px rgba(65, 135, 65, 0.919);
+}
+
+.card-item h2 {
+    margin: 1.2rem 0;
+}
+
+.card-item svg {
+    width: 3rem;
+}
+
+/* testimonials-section-card-styling  */
+#Testimonials h1 p {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#Testimonials .card-item {
+    padding: 1rem;
+    background-color: white;
+}
+
+#Testimonials .card-relative {
+    position: relative;
+    height: 15rem;
+    width: 20rem;
+    padding-top: 3rem;
+}
+
+#Testimonials img {
+    border: 5px solid rgba(65, 135, 65, 0.919);
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(65, 135, 65, 0.919);
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 6.2rem;
+}
+
+#Testimonials h4 {
+    margin-top: 2.5rem;
+    font-weight: bold;
+}
+
+#Testimonials h5 {
+    color: orange;
+}
+
+#Testimonials p {
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+
+/* footer-styling  */
+footer {
+    background-color: rgba(65, 135, 65, 0.919);
+}
+
+.footer-item {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+} .footer-item h2 {
+    font-weight: bold;
+    color: white;
+}
+
+div ul li {
+    list-style-type: none;
+    margin: 1rem;
+    color: white;
+}
+
+form {
+    padding: 3rem 0;
+}
+
+form input {
+    outline: none;
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+/* all-rights-reserved-styling  */
+.main-footer {
+    background-color: rgba(65, 135, 65, 0.919);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+
+/* For Tablet, Ipad  */
+@media screen and (max-width: 992px) {
+
     section {
-      text-align: center;
-      justify-content: center;
-      margin: 5rem auto;
-      width: 70rem;
+        width: 52rem;
+        padding: 1rem;
     }
 
     section h1 {
-      justify-content: center;
-      margin: 2rem 0;
-      font-weight: bold;
-      font-size: 3rem;
+        font-size: 1.9rem;
     }
 
-    section p {
-      text-align: start;
+    header {
+        height: 50vh;
     }
 
-    /* education-section-styling  */
-    .education {
-      display: flex;
+    header nav {
+        padding: 2rem;
     }
 
     .education img {
-      border: 1px solid transparent;
-      border-radius: 5rem;
-      height: 20rem;
-      width: 28rem;
-      margin: 0 1rem;
-    }
-
-    /* About-section-styling  */
-    #About {
-      display: flex;
+        width: 23rem;
     }
 
     #About img {
-      border: 1px solid transparent;
-      border-radius: 3rem;
-      height: 30rem;
-      width: 30rem;
-      margin: 0 2rem;
-      object-fit: cover;
-    }
-
-    /* courses-section-card-styling  */
-    .card {
-      display: flex;
-      justify-content: space-between;
+        margin: auto 0.8rem;
     }
 
     .card-item {
-      border: 5px solid rgb(175, 184, 192);
-      border-radius: 1rem;
-      background-color: rgb(225, 230, 234);
-      box-sizing: border-box;
-      margin: 1rem;
-      padding: 2rem;
-    }
-
-    .card-item:hover {
-      box-shadow: 5px 5px 15px rgb(170, 175, 180);
-    }
-
-    .card-item h2 {
-      margin: 1.2rem 0;
-    }
-
-    .card-item svg {
-      width: 3rem;
-    }
-
-    /* testimonials-section-card-styling  */
-    #Testimonials h1 p {
-      margin-top: 0;
-      font-weight: 400;
-    }
-
-    #Testimonials .card-item {
-      padding: 1rem;
-      background-color: rgb(249, 251, 252);
-    }
-
-    #Testimonials .card-relative {
-      position: relative;
-      height: 15rem;
-      width: 20rem;
-      padding-top: 3rem;
+        padding: 1rem;
     }
 
     #Testimonials img {
-      border: 5px solid rgb(175, 184, 192);
-      border-radius: 50%;
-      width: 7rem;
-      height: 7rem;
-      position: absolute;
-      top: 0;
-      left: 6.2rem;
-    }
-
-    #Testimonials h4 {
-      margin-top: 2.5rem;
-      font-weight: bold;
-    }
-
-    #Testimonials h5 {
-      color: orange;
-    }
-
-    #Testimonials p {
-      font-weight: 200;
-      margin-top: 1rem;
-    }
-
-
-    /* footer-styling  */
-    footer {
-      background-color: orange;
-    }
-
-    .footer-item {
-      padding: 3rem;
-      display: flex;
-      justify-content: space-around;
-    }
-
-    div ul li {
-      list-style-type: none;
-      margin: 1rem;
-    }
-
-    form {
-      padding: 3rem 0;
-    }
-
-    form input {
-      outline: none;
-      width: 20rem;
-      height: 2rem;
-      border: 1px solid transparent;
-      border-radius: 0.3rem;
-      padding: 0.5rem;
-    }
-
-    /* all-rights-reserved-styling  */
-    .main-footer {
-      background-color: rgb(227, 162, 40);
-      text-align: center;
-      padding: 1rem;
-    }
-
-
-    /* For Tablet, Ipad  */
-    @media screen and (max-width: 992px) {
-
-      section {
-        width: 52rem;
-        padding: 1rem;
-      }
-
-      section h1 {
-        font-size: 1.9rem;
-      }
-
-      header {
-        height: 50vh;
-      }
-
-      header nav {
-        padding: 2rem;
-      }
-
-      .education img {
-        width: 23rem;
-      }
-
-      #About img {
-        margin: auto 0.8rem;
-      }
-
-      .card-item {
-        padding: 1rem;
-      }
-
-      #Testimonials img {
         left: 5rem;
-      }
+    }
 
-      .footer-item button {
+    .footer-item button {
         padding: 1rem;
         margin-top: 1rem;
         width: 21rem;
-      }
-
-      .footer-item form {
-        padding: 1rem 0;
-        width: 20rem;
-      }
     }
 
+    .footer-item form {
+        padding: 1rem 0;
+        width: 20rem;
+    }
+}
 
-    /* For mobile screen  */
-    @media screen and (max-width: 768px) {
 
-      button {
+/* For mobile screen  */
+@media screen and (max-width: 768px) {
+
+    button {
         width: 6rem;
         height: 3rem;
         cursor: pointer;
         font-size: 1rem;
-      }
+    }
+/* 
+    header nav {
+        width: 90%;
+    } */
 
-      header section {
-        margin: 6rem auto;
-      }
+    header section {
+        margin: 2rem auto;
+    }
 
-      section {
+    section {
         width: 22rem;
-      }
+    }
 
-      section h1 {
+    section h1 {
         font-size: 1.2rem;
-      }
+    }
 
-      nav .menu {
-        border: 3px solid orangered;
+    nav .menu {
+        border: 3px solid rgb(50, 120, 50);
         border-radius: 0.5rem;
         position: absolute;
         display: flex;
         right: 2rem;
-        background-color: orange;
-      }
+        background-color: rgba(50, 120, 50, 0.734);
+    }
 
-      nav ul {
+    nav .social {
+        display: none;
+    }
+
+    nav ul {
         display: none;
         width: 10rem;
-      }
+    }
 
-      nav #btn {
+    nav #btn {
         display: block;
         height: 2rem;
         width: 3rem;
-      }
+    }
 
-      nav #btn2 {
+    nav #btn2 {
         height: 2rem;
         width: 3rem;
         display: none;
-      }
+    }
 
-      .education {
+    .education {
         display: block;
-      }
+    }
 
-      .education img {
+    .education img {
         width: 20rem;
         margin-top: 2rem;
-      }
+    }
 
-      #About {
+    #About {
         display: flex;
         flex-direction: column-reverse;
-      }
+    }
 
-      #About img {
+    #About img {
         width: 20rem;
         margin-top: 2rem;
-      }
+    }
 
-      img {
+    img {
         border: 1px solid;
-      }
+    }
 
-      .card {
+    .card {
         display: block;
-      }
+    }
 
-      #Testimonials img {
-        left: 6.3rem;
-      }
+    #Testimonials img {
+        left: 6.1rem;
+    }
 
-      #Testimonials .card-relative {
+    #Testimonials .card-relative {
         margin-top: 3rem;
-      }
+    }
 
-      .footer-item {
+    .footer-item {
         display: grid;
         padding: 2rem 0;
-      }
-
-      .footer-item .form {
-        margin-top: 2rem;
-      }
     }
-  </style>
+
+    .footer-item .form {
+        margin-top: 2rem;
+    }
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GOTOCOURSE-Template 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -421,11 +470,33 @@
       <!-- nav-bar  -->
       <nav>
         <div class="logo-item">
-          <img
-            src="https://img.freepik.com/free-vector/gradient-book-logo-with-slogan_23-2148832096.jpg?t=st=1709018929~exp=1709022529~hmac=f7b0a5152bb8f49d03fb15c0b6b471f6b12f0be39ea6e8c60f716e16e7513415&w=740"
-            alt="DruxAMB=Logo">
-          <h2 class="logo-text">DEMO<p>COURSE</p>
-          </h2>
+          <div>
+            <img
+              src="https://img.freepik.com/free-vector/gradient-book-logo-with-slogan_23-2148832096.jpg?t=st=1709018929~exp=1709022529~hmac=f7b0a5152bb8f49d03fb15c0b6b471f6b12f0be39ea6e8c60f716e16e7513415&w=740"
+              alt="DruxAMB=Logo">
+            <h2 class="logo-text">TECH<p>COURSE</p>
+            </h2>
+          </div>
+          <div class="social">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+              </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                  d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+              </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f8f9fc" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                  d="M384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h72.6l-2.2-.8c-5.4-48.1-3.1-57.5 15.7-134.7c3.9-16 8.5-35 13.9-57.9c0 0-7.3-14.8-7.3-36.5c0-70.7 75.5-78 75.5-25c0 13.5-5.4 31.1-11.2 49.8c-3.3 10.6-6.6 21.5-9.1 32c-5.7 24.5 12.3 44.4 36.4 44.4c43.7 0 77.2-46 77.2-112.4c0-58.8-42.3-99.9-102.6-99.9C153 139 112 191.4 112 245.6c0 21.1 8.2 43.7 18.3 56c2 2.4 2.3 4.5 1.7 7c-1.1 4.7-3.1 12.9-4.7 19.2c-1 4-1.8 7.3-2.1 8.6c-1.1 4.5-3.5 5.5-8.2 3.3c-30.6-14.3-49.8-59.1-49.8-95.1C67.2 167.1 123.4 96 229.4 96c85.2 0 151.4 60.7 151.4 141.8c0 84.6-53.3 152.7-127.4 152.7c-24.9 0-48.3-12.9-56.3-28.2c0 0-12.3 46.9-15.3 58.4c-5 19.3-17.6 42.9-27.4 59.3H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64z" />
+              </svg>
+            </a>
+          </div>
         </div>
         <!-- menu-bar  -->
         <div class="menu">
@@ -435,19 +506,15 @@
             <li><a href="#">Home</a></li>
             <li><a href="#About">About Us</a></li>
             <li><a href="#Courses">Courses</a></li>
-            <li><a href="#Login">Login</a><svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
-              </svg></li>
+            <li><a href="#Login">Login</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></li>
           </ul>
         </div>
       </nav>
 
       <!-- header-section  -->
       <section>
-        <h1>WHAT WOULD <p> YOU LIKE </p> TO LEARN?</h1>
-        <button>Know More</button>
+        <h1>START YOUR <p> TECH JOURNEY </p> WITH US</h1>
+        <button>Learn More</button>
         </div>
       </section>
     </header>
@@ -455,22 +522,22 @@
     <!-- section-1  -->
     <section class="education">
       <div>
-        <h1>WELCOME TO <p> EDUCATION</p>
+        <h1>GET INTO <p> TECH</p>
         </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nulla dignissimos in eius! Neque blanditiis
           repellendus optio voluptatem inventore aperiam qui aspernatur consectetur assumenda provident dicta in quam
           architecto repellat distinctio, ratione debitis omnis minus quia quae sed! Id, temporibus!</p>
       </div>
-      <img src="https://as1.ftcdn.net/v2/jpg/07/13/17/42/1000_F_713174201_Wr8GG0q1cDnTR442qJXNBsnrphHcQdZj.jpg"
+      <img src="https://img.freepik.com/free-photo/enthusiastic-african-engineer-analysing-cad-software-design-3d-concept-container-working-overtime-start-up-company-prototype_482257-2427.jpg?t=st=1709111462~exp=1709115062~hmac=7d361f958065976621fbdd912624e394f194aeaa50cd00bd6aff6e3b6be44008&w=900"
         alt="EDUCATION">
     </section>
 
     <!-- About-section  -->
     <section id="About">
-      <img src="https://as2.ftcdn.net/v2/jpg/05/12/18/97/1000_F_512189700_z0jM8RN61JlxJUQb8uYZVRobMmNQUxqu.jpg"
+      <img src="https://img.freepik.com/free-photo/programer-sitting-desk-with-multiple-screens-running-code-talking-with-colleague-about-artificial-intelligence-algorithm-software-developers-doing-innovative-artificial-intelligence-project_482257-40606.jpg?t=st=1709111547~exp=1709115147~hmac=257659946118b330ff5e9da498f2eb43f2e905b9c12db194b9b9d95623c1ebc2&w=900"
         alt="About">
       <div>
-        <h1>WHAT <P> WE DO</P>
+        <h1>ABOUT <P> US</P>
         </h1>
         <p>
           Deserunt voluptatum numquam officiis quis quidem quae nihil dolorum ipsum rerum quas magnam odit facilis ut,
@@ -552,7 +619,7 @@
               src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-139608.jpg?t=st=1709045785~exp=1709049385~hmac=4f0664e3880a0e6ffe8c164b3e5f315ba1644436683d8a2988fb02bbaf185063&w=740"
               alt="profile">
             <h4>Peter Smith</h4>
-            <h5>UI-UX Designer</h5>
+            <h5>Mern Stack Developer</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora voluptatibus aliquid
               quibusdam
               aperiam, perspiciatis sint dolores distinctio iste necessitatibus?</p>
@@ -564,7 +631,7 @@
               src="https://img.freepik.com/free-photo/black-man-happy-expression_155003-4215.jpg?t=st=1709045951~exp=1709049551~hmac=4f885a4060661fc3e8a8de0ab70e5eec085e321f3993ba99e2cb9b0bc209307d&w=360"
               alt="profile">
             <h4>James Cornel</h4>
-            <h5>Cyber Security</h5>
+            <h5>PhP Developer</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora voluptatibus aliquid
               quibusdam
               aperiam, perspiciatis sint dolores distinctio iste necessitatibus?</p>
@@ -614,11 +681,9 @@
   </main>
 </body>
 <script>
-
-
   // Handling Hamburger Click event 
 
-  const handleClick = () => {
+const handleClick = () => {
     document.getElementById("ul").style.display = "block";
     document.getElementById("btn").style.display = "none";
     document.getElementById("btn2").style.display = "block";
